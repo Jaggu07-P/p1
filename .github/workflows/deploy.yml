@@ -24,4 +24,4 @@ jobs:
           force_orphan: true         # Create gh-pages branch from scratch
           keep_files: false          # Remove old files
           user_name: "Jaggu07-P"    # Your GitHub username
-          user_email: "youremail@example.com"  # Replace with your GitHub email
+          user_email: "jagannathms07@gmail.com"  # Replace with your GitHub email
