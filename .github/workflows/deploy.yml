@@ -1,27 +1,24 @@
 name: Deploy Website to GitHub Pages
 
-# Trigger on push to main branch
 on:
   push:
     branches:
-      - main  # make sure this is your default branch
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./            # Root folder containing index.html
-          force_orphan: true         # Create gh-pages branch from scratch
-          keep_files: false          # Remove old files
-          user_name: "Jaggu07-P"    # Your GitHub username
-          user_email: "jagannathms07@gmail.com"  # Replace with your GitHub email
+          publish_dir: ./          # Root folder containing index.html
+          force_orphan: true       # Create gh-pages branch from scratch
+          keep_files: false        # Remove old files
+          user_name: "Jaggu07-P"
+          user_email: "youremail@example.com"  # Replace with your GitHub email
